@@ -1,7 +1,7 @@
-# Hangman Game
+## Hangman Game
 Hey ! This is a hangman game made by a 15 years old student
 
-## Before starting
+# Before starting
 
 I know there are some problems, and here are all of them
   › Music does not work
@@ -11,15 +11,15 @@ I know there are some problems, and here are all of them
 
 I will fix it later. At the bottom of this file, you can follow the progress of the game, its improvements and modifications
 
-## Explanation
+# Explanation
 
-# What is it ?
+## What is it ?
 → It is a game for which you will need vocabulary knowledge, because your goal is to find a random word from a list of 370 words. 
 There are easy words (example: apple, cube, duck), (very) hard words (example: myelencephalons, xanthosiderites, heliographical). Also, for each letter there are a country and a capital (Except letter `x`, because there are not any country or capital which starts with this letter)
 • (example: amsterdam, berlin, ...)
 • (example: armenia, bielorussia, ...)
 
-# Can you explain how the game works ?
+## Can you explain how the game works ?
 → It selects a random word from this extra list. For each letter of this word, there will be an underscore 
 (example: if the word is `apple`, then you will have this on your screen -> `_ _ _ _ _`)
 
@@ -34,15 +34,15 @@ You have six coconuts, and if you loose all of them, you loose, but a popup will
 If you guess the word, a popup will be displayed and you will be able to try to find an other word.
 For each win, you will get one red buoy. For each hundred red buoys, you will get a blue buoy.
 
-# Why did you make this game ?
+## Why did you make this game ?
 → I made this game following a French little event on a Discord server. I want to thank Yaakin, the creator of the event, to make it happend
 
-# I encountered a problem / I have a suggestion or a question, how can I message you ?
+## I encountered a problem / I have a suggestion or a question, how can I message you ?
 → You can message me on Discord, here is my username `celestee.rl`
 
-# Will you continue the development of the game ?
+## Will you continue the development of the game ?
 → Yes, but not for the moment. I know I have a lot of things to do a enhance the game, but I am a young student and I want to focus myself on my classes.
 
-## Pacth Notes / Versions
+# Pacth Notes / Versions
 
-# V1.0.0 - Creation of the game
+## V1.0.0 - Creation of the game
