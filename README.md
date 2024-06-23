@@ -1,4 +1,4 @@
-## Hangman Game
+# Hangman Game
 Hey ! This is a hangman game made by a 15 years old student
 
 # Before starting
