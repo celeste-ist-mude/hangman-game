@@ -53,20 +53,6 @@ function Night() {
     document.body.className = 'night_theme';
 }
 
-// function AddScore() {
-//     var value = parseInt(document.getElementById('score').value);
-//     var hvalue = parseInt(document.getElementById('score_hundred').value);
-//     value = isNaN(value) ? 0 : value;
-//     value++;
-//     if (value === 100) {
-//         hvalue++
-//         document.getElementById('score').value = 0;
-//         document.getElementById('score_hundred').value = hvalue
-//     } else {
-//         document.getElementById('score').value = get('score').find(x => x.includes('score'))[1]
-//     }
-// }
-
 function Close_HowToPlay() {
     close()
 }
@@ -83,7 +69,7 @@ let fails = 0;
 let won = false
 
 window.addEventListener('keydown', (e) => {
-    console.log(Selected_Word)
+    // console.log(Selected_Word)
 
     let letter = e.key.toLocaleLowerCase()
     if (isWordFound) return;
@@ -116,8 +102,6 @@ window.addEventListener('keydown', (e) => {
             FinalMessage.textContent = `You lost, the word was "${Selected_Word}"`
             PopupContainer.style.display= 'flex';
             WrongBoard.style.display = 'none';
-
-            // return window.location.href = `${window.location.origin + window.location.pathname}?score=${(parseInt(getScore('score')) % 100 || 0)}`
         }
         else {
             document.querySelector(`.boxes.${['one', 'two', 'three', 'four', 'five', 'six'][fails - 1]} > div`).textContent = letter
