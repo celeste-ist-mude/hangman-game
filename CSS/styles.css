@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/* Basic Font */
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+/* Title Boards */
+
+body {
+    background-color: #262626;
+    background: url(/Images/Background_day.png);
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.day_theme {
+    background: url(/Images/Background_day.png);
+}
+
+.night_theme {
+    background: url(/Images/Background_night.png);
+}
+
+.mini-header {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 80px 20px rgba(31, 38, 135, 0.4);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    height: 100px;
+    width: 650px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.square {
+    font-family: Roboto Mono;
+    font-weight: 700;
+    text-align: center;
+    color: #262626;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    border: #262626 solid 2.5px;
+}
+
+.music {
+    display: none;
+}
+
+.how-to-play {
+    position: relative;
+    height: 70px;
+    width: 120px;
+    left: 40px;
+    top: 10px;
+}
+
+.play-stop {
+    position: relative;
+    height: 70px;
+    width: 120px;
+    left: 190px;
+    top: -66px;
+}
+
+.theme {
+    position: relative;
+    height: 70px;
+    width: 120px;
+    left: 340px;
+    top: -140px;
+}
+
+.credits {
+    position: relative;
+    height: 70px;
+    width: 120px;
+    left: 490px;
+    top: -216px;
+}
+
+
+
+.button {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    left: 0;
+    top: -2px;
+    border: #262626 solid 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+}
+
+.desc-play {
+    position: relative;
+    top: 5px;
+    margin-top: 0;
+}
+
+.desc-music {
+    position: relative;
+    top: 5px;
+    margin-top: 0;
+}
+
+.desc-theme {
+    position: relative;
+    top: 5px;
+    margin-top: 0;
+}
+
+.desc-credits {
+    position: relative;
+    top: 5px;
+    margin-top: 0;
+}
+
+.title {
+    position: relative;
+    color: #ffffff;
+    font-family: Oi;
+    font-weight: 100;
+    background: none;
+}
+
+.title-left {
+    top: 195px;
+    left: 62px;
+}
+
+.title-middle {
+    font-size: 32px;
+    top: -15px;
+    left: 580px;
+}
+
+.title-right {
+    top: 55px;
+    left: 1205px;
+}
+
+.coco {
+    position: relative;
+    width: 50px; height: 50px;
+}
+
+.coconut1 {
+    top: -165px; left: 80px;
+}
+
+.coconut2 {
+    top: -165px; left: 105px;
+}
+
+.coconut3 {
+    top: -165px; left: 130px;
+}
+
+.coconut4 {
+    top: -100px; left: -82px;
+}
+
+.coconut5 {
+    top: -100px; left: -57px;
+}
+
+.coconut6 {
+    top: -100px; left: -32px;
+}
+
+.buoy, .buoy_hundred {
+    position: relative;
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    box-shadow: #000 0 0 10px;
+}
+
+.buoy {
+    top: -5px; left: 120px;
+}
+
+.buoy_hundred {
+    top: 65px; left: 65px;
+}
+
+.title-score {
+    font-family: Roboto Mono;
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+}
+
+.currscore,
+.currscore_hundred {
+    position: absolute;
+    font-family: Roboto Mono;
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: #000 2px 2px 5px;
+    background: none;
+    border: none;
+    left: 20px; top: 40px;
+    text-align: left;
+    pointer-events: none;
+}
+
+.currscore_hundred {
+    left: 20px; top: 110px;
+}
+
+.test_addscore {
+    position: relative;
+    top: 50px;
+    left: 160px;
+}
+
+.pop {
+    font-family: Roboto Mono;
+}
+
+.popup {
+    position: relative;
+    width: 500px;
+    height: 750px;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border-radius: 50px;
+    overflow-y: scroll;
+    display: none;
+}
+
+.popup::-webkit-scrollbar {
+    width: 12px;
+
+}
+
+.popup::-webkit-scrollbar-track {
+    background: none;
+    border-radius: 12px;
+}
+
+.popup::-webkit-scrollbar-thumb {
+    background: none;
+    border-radius: 12px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: #828282 #232323;
+    }
+}
+
+.up {
+    font-size: 24px;
+    font-weight: 1000;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+a,
+a:hover,
+a:target {
+    text-decoration: none;
+    color: #232323;
+}
+
+.pop-title {
+    text-align: center;
+    position: fixed;
+    white-space: nowrap;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.desc {
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    top: 50px;
+}
+
+.close-popup {
+    position: relative;
+    border-radius: 50%;
+    left: 455px;
+    top: 22px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: Consolas;
+    text-align: center;
+}
+
+.bottom {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+#wrong-board {
+    display: block;
+}
+
+#popup-container {
+    transform: translateY(-20%);
+    display: none;
+}
+
+.boxes {
+    position: fixed;
+    border-radius: 20px;
+    background-color: #662800;
+    width: 50px; height: 50px;
+}
+
+.one {
+    top: 360px; left: 1230px;
+}
+
+.two {
+    top: 360px; left: 1320px;
+}
+
+.three {
+    top: 360px; left: 1410px;
+}
+
+.four {
+    top: 430px; left: 1230px;
+}
+
+.five {
+    top: 430px; left: 1320px;
+}
+
+.six {
+    top: 430px; left: 1410px;
+}
+
+.place-the-word {
+    display: flex;
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translateX(-55%) translateY(-50%);
+}
+
+#word {
+    font-family: Roboto Mono;
+    color: white;
+    font-size: 40px;
+    white-space: nowrap;
+    width: 500px;
+    left: 50%;
+}
+
+.wrong-letters {
+    position: relative;
+    color: #ffffff;
+    font-size: 32px;
+    font-family: Roboto Mono;
+    text-transform: uppercase;
+    top: 5%; left: 30%;
+}
+
+.background-popup {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: relative;
+    top: -500px; left: 0;
+    width: 100%; height: 1000px;
+}
+
+.final-popup {
+    position: relative;
+    top: 45%; left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 600px; height: 200px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 60px;
+    border: none;
+}
+
+#play-again {
+    position: relative;
+    top: 100px; left: 0;
+    width: 520px; height: 40px;
+    border-radius: 60px;
+    font-family: Roboto Mono;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#final-message {
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+#play-again:hover {
+    background-color: rgba(220, 220, 220, 0.5);
+}
+
+#word, #word > * {
+    text-align: center;
+}
+
+.guess-letter{
+    position: relative;
+    border-bottom: 3px solid #ffffff;
+    color: transparent;
+    display: inline-flex;
+    font-size: 30px;
+    font-family: Roboto Mono;
+    margin: 0 15px;
+    top: -220px;
+    height: 50px; width: 20px;
+}
+
+.notification-container {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.35);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 800px; height: 150px;
+    top: 800px; left: 50%; transform: translateX(-50%);
+    font-family: Roboto Mono;
+    text-align: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.notification-container > p {
+    position: relative;
+    top: 35px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.notification-container.show{
+    transform: translateX(-50%) translateY(-150px);
+}
+
+.scoreboard {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 80px 20px rgba(31, 38, 135, 0.4);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-bottom-right-radius: 75px;
+    height: 200px; width: 200px;
+    position: relative;
+    top: -325px; left: 0;
+}

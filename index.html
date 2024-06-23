@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Céleste › Jeu du Pendu</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <div class="main-page">
+        <div class="mini-header">
+            <div class="buttons">
+                
+                <div class="square how-to-play">
+                    <p class="desc-play">How To Play</p>
+                    <a href="howtoplay.html" target="_blank"><button class="button howtoplay">Read</button></a>
+                </div>
+
+                <div class="square play-stop">
+                    <audio id="music" class="music" src="Musics/SummerChill_Music.mp3" controls></audio>
+                    <p class="desc-music">Music</p>
+                    <button class="button play" onclick="document.getElementById('music').play()">Play</button>
+                    <button class="button stop" onclick="document.getElementById('music').pause()">Stop</button>
+                </div>
+
+                <div class="square theme">
+                    <p class="desc-theme">Theme</p>
+                    <button class="button day" id="day" onclick="Day()">Day</button>
+                    <button class="button night" id="night" onclick="Night()">Night</button>
+                </div>
+
+                <div class="square credits">
+                    <p class="desc-credits">Credits</p>
+                    <a href="credits.html" target="_blank"><button class="button Credits">Credits</button></a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="title title-left">Guesses Left</h2>
+        <h2 class="title title-middle">Hangman Game</h2>
+        <h2 class="title title-right">Wrong Letters</h2>
+
+        <div class="score">
+            <div class="scoreboard">
+                <p class="title-score">Score</p>
+                <input type="number" class="currscore" id="score" value="0">
+                <input type="number" class="currscore_hundred" id="score_hundred" value="0">
+                <img class="buoy" src="Images/Score_buoy.png" alt="BouéeScore">
+                <img class="buoy_hundred" src="Images/Score_buoy_hundred.png" alt="BouéeScore100">
+                <!-- <button class="test_addscore" onclick="AddScore()">Add Score</button> -->
+            </div>
+        </div>
+
+        <div class="lives-board">
+            <img src="Images/Closed_Coconut.png" alt="Coco" class="coco coconut1">
+            <img src="Images/Closed_Coconut.png" alt="Coco" class="coco coconut2">
+            <img src="Images/Closed_Coconut.png" alt="Coco" class="coco coconut3">
+            <img src="Images/Closed_Coconut.png" alt="Coco" class="coco coconut4">
+            <img src="Images/Closed_Coconut.png" alt="Coco" class="coco coconut5">
+            <img src="Images/Closed_Coconut.png" alt="Coco" class="coco coconut6">
+        </div>
+
+        <div class="game-board">
+            <div class="place-the-word">
+                <div class="word" id="word"></div>
+            </div>
+                
+            </div><p id="info"></p>
+
+            <div class="popup-container" id="popup-container">
+                <div class="background-popup">    
+                    <div class="square final-popup">
+                        <h2 id="final-message"></h2>
+                        <button class="button PlayAgain" id="play-again">Play another round !</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrong-board" id="wrong-board">
+            <div class="boxes one" id="boxes">
+                <div class="wrong-letters"></div>
+            </div>
+            <div class="boxes two" id="boxes">
+                <div class="wrong-letters"></div>
+            </div>
+            <div class="boxes three" id="boxes">
+                <div class="wrong-letters"></div>
+            </div>
+            <div class="boxes four" id="boxes">
+                <div class="wrong-letters"></div>
+            </div>
+            <div class="boxes five" id="boxes">
+                <div class="wrong-letters"></div>
+            </div>
+            <div class="boxes six" id="boxes">
+                <div class="wrong-letters"></div>
+            </div>
+        </div>
+
+        <div class="notification-container" id="notification-container">
+            <p>You have already asked this letter.</p>
+        </div>
+    </div>
+
+    <script src="JavaScript/index.js"></script>
+</body>
+</html>

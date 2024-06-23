@@ -1,0 +1,143 @@
+<html lang="fr">
+
+<head <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Céleste › Page de test</title>
+</head>
+
+<body>
+        <div class="popup">
+            <button type="button" class="close-popup" id="close" onclick="window.close()">&#x2715;</button>
+            <h1 class="pop-title">Hangman › How To Play</h1>
+            <div class="desc">
+                
+                <p class="up one">1. Fonctionalities</p>
+                <p class="normal one">You have the possibility to <br>
+                        &#160;› Check the How To Play page<br>
+                        &#160;› Turn on / off a chill music<br>
+                        &#160;› Select a day or night theme<br>
+                        &#160;› See everyone who helped me
+                </p>
+
+                <p class="up two">2. How does it work : Wins</p>
+                <p class="normal two">I made a score system on my own, it is pretty simple but very effective.<br>
+                    The score are represented by buoys :<br>
+                        &#160;› The red ones increase by one for each &#160;&#160;&#160;victory<br>
+                        &#160;› The blue ones increase by one for &#160;&#160;&#160;each one hundred victory. It also &#160;&#160;&#160;resets red buoys
+                </p>
+
+                <p class="up three">3. How does it work : Game</p>
+                <p class="normal three">
+                    It it very simple to play : You will see some squares (between one and seven) and your goal is to find
+                    the letters which should be in these boxes<br>
+                    Once you asked for a letter, either the letter is part of the word to find or the letter is not part and
+                    a coconut will start falling.<br>If you are wrong five times, the coconut will hit the human's head and
+                    he will die.
+                </p>
+
+                <p class="up four">4. Why I made this game ?</p>
+                <p class="normal four">
+                    I made this game thanks to a French community of developers on Discord Café Des Devs (Dev's Coffee, in English)<br>
+                    It it an event, everyone has one week (from 16/06 to 23/06) to create a Hangman game (in any language) but I am so bad, and I tried anyway<br> 
+                    I am very proud of what I did, I never thought I could do that. So I want to thank the event creator, Yaakin, for making this event happen and therefore pushing me to participate and learn more
+                </p>
+
+                <p class="normal bottom"><br>Céleste, 2024</p>
+            </div>
+        </div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+        /* Basic Font */
+        @import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+        /* Title Boards */
+
+        body {
+            background-color: #232323;
+            color: #232323;
+            font-family: Roboto Mono;
+        }
+
+        .popup {
+            position: relative;
+            width: 500px;
+            height: 750px;
+            margin: auto;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: white;
+            border-radius: 50px;
+            overflow-y: scroll;
+        }
+
+        .popup::-webkit-scrollbar {
+            width: 12px;
+            
+        }
+
+        .popup::-webkit-scrollbar-track {
+            background: none;
+            border-radius: 12px;
+        }
+
+        .popup::-webkit-scrollbar-thumb {
+            background: none;
+            border-radius: 12px;
+        }
+
+        @supports not selector(::-webkit-scrollbar) {
+            body {
+                scrollbar-color:  #828282 #232323;
+            }
+        }
+
+        .up {
+            font-size: 24px;
+            font-weight: 1000;
+        }
+
+        .normal {
+            font-weight: 400;
+        }
+
+        a,
+        a:hover,
+        a:target {
+            text-decoration: none;
+            color: #232323;
+        }
+
+        .pop-title {
+            text-align: center;
+            position: fixed;
+            white-space: nowrap;
+            top: 15px; left: 50%; transform: translateX(-50%);
+        }
+
+        .desc {
+            margin-left: 50px;
+            margin-right: 50px;
+            position: relative;
+            top: 50px;
+        }
+
+        .close-popup {
+            position: relative;
+            border-radius: 50%;
+            left: 450px; top: 20px;
+            width: 30px; height: 30px;
+            border: none;
+            background-color: transparent;
+            font-size: 20px;
+            font-family: Consolas;
+            text-align: center;
+        }
+
+        .bottom {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+    </style>
+</body>
+
+</html>

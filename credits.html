@@ -1,0 +1,137 @@
+<html lang="fr">
+
+<head <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Céleste › Page de test</title>
+</head>
+
+<body>
+        <div class="popup">
+            <button type="button" class="close-popup" id="close" onclick="window.close()">&#x2715;</button>
+            <h1 class="pop-title">Hangman › Credits</h1>
+            <div class="desc">
+
+                <p class="up one">Hey! This are the credits</p>
+                <p class="normal one">I want to thank some people for some reason<br>I will try to thank everyone</p>
+
+                <p class="up two">Thank to : nitatom</p>
+                <p class="normal two">Thank to him for trying help me for the background, he gave me some ideas<br>Also, he rated the game during its creation, giving me his thoughts on it</p>
+
+                <p class="up three">Thank to : Google</p>
+                <p class="normal three">Thank to Google / YouTube for helping me during the creation. It may be logic but without Internet I couldn't do some things that I never done before</p>
+
+                <p class="up four">Thank to : *La Forêt Magique*</p>
+                <p class="normal four">
+                    Thank to them, it is a french Discord community who helps me to fix some issues that I encountered.<br>
+                    I don't know if I should say them name, but thank to :<br>
+                    &#160;› Le Michel<br>
+                    &#160;› Xecozz<br>
+                    &#160;› cooki (je lui dois beaucoup)<br>
+                    &#160;› Lexedia
+                </p>
+
+                <p class="up five">Thank to : me</p>
+                <p class="normal five">Yes, I'm a bit narcissistic, but I never realized such a thing, so developed. So I want to celebrate myself to work on this project</p>
+
+                <p class="up six">Special thank to : Yaakin</p>
+                <p class="normal six">As I said in the How To Play part, I want to thank Yaakin and the community of "Café Des Devs" for creating this event and pushing me to learn HTML / CSS / JavaScript</p>
+
+                <p class="normal bottom"><br>Céleste, 2024</p>
+            </div>
+        </div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+        /* Basic Font */
+        @import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+        /* Title Boards */
+
+        body {
+            background-color: #232323;
+            color: #232323;
+            font-family: Roboto Mono;
+        }
+
+        .popup {
+            position: relative;
+            width: 500px;
+            height: 750px;
+            margin: auto;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: white;
+            border-radius: 50px;
+            overflow-y: scroll;
+        }
+
+        .popup::-webkit-scrollbar {
+            width: 12px;
+            
+        }
+
+        .popup::-webkit-scrollbar-track {
+            background: none;
+            border-radius: 12px;
+        }
+
+        .popup::-webkit-scrollbar-thumb {
+            background: none;
+            border-radius: 12px;
+        }
+
+        @supports not selector(::-webkit-scrollbar) {
+            body {
+                scrollbar-color:  #828282 #232323;
+            }
+        }
+
+        .up {
+            font-size: 24px;
+            font-weight: 1000;
+        }
+
+        .normal {
+            font-weight: 400;
+        }
+
+        a,
+        a:hover,
+        a:target {
+            text-decoration: none;
+            color: #232323;
+        }
+
+        .pop-title {
+            text-align: center;
+            position: fixed;
+            white-space: nowrap;
+            top: 15px; left: 50%; transform: translateX(-50%);
+        }
+
+        .desc {
+            margin-left: 50px;
+            margin-right: 50px;
+            position: relative;
+            top: 50px;
+        }
+
+        .close-popup {
+            position: relative;
+            border-radius: 50%;
+            left: 450px; top: 20px;
+            width: 30px; height: 30px;
+            border: none;
+            background-color: transparent;
+            font-size: 20px;
+            font-family: Consolas;
+            text-align: center;
+        }
+
+        .bottom {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+    </style>
+</body>
+
+</html>
