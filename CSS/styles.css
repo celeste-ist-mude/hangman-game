@@ -15,13 +15,13 @@ body {
     z-index: 1;
 }
 
-.day_theme {
+/* .day_theme {
     background: url(/Images/Background_day.png);
 }
 
 .night_theme {
     background: url(/Images/Background_night.png);
-}
+} */
 
 .mini-header {
     background: rgba(255, 255, 255, 0.15);
